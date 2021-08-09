@@ -11,7 +11,7 @@ if __name__ == "__main__":
     parser.add_argument("--topic", default='chat')
     args = parser.parse_args()
 
-    server_ip = os.environ.get("SERVER_IP")
+    server_ip = "116.89.189.30"
     topic = args.topic
 
     # kafka-python 라이브러리에서 가져온 KafkaProducer를 사용해 JSON 형식의 메시지를 발행하는 Kafka producer를 정의합니다
